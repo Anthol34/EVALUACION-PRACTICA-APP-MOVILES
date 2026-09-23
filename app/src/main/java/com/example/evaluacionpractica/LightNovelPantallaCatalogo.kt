@@ -1,9 +1,8 @@
 package com.example.evaluacionpractica
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.*
@@ -37,19 +36,17 @@ fun LightNovelCatalogScreen(
             )
         }
     ) { paddingValues ->
-        LazyVerticalGrid(
-            columns = GridCells.Fixed(2),
+        LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues),
             contentPadding = PaddingValues(16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
-            horizontalArrangement = Arrangement.spacedBy(16.dp)
+            verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            items(lightNovel) { lightNovel ->
+            items(lightNovel) { lightNovelItem ->
                 LightNovelItemCard(
-                    lightNovel = lightNovel,
-                    onClick = { onLightNovelClick(lightNovel) }
+                    lightNovel = lightNovelItem,
+                    onClick = { onLightNovelClick(lightNovelItem) }
                 )
             }
         }
