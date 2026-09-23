@@ -14,7 +14,7 @@ data class LightNovel(
     val anioPublicacion: Int,
     val calificacion: Double,
     val sinopsis: String,
-    val icono: ImageVector = Icons.Default.Book
+    val imagenRes: Int
 )
 
 val listaLightNovel = listOf(
@@ -25,7 +25,7 @@ val listaLightNovel = listOf(
         anioPublicacion = 2015,
         calificacion = 4.9,
         sinopsis = "Tras el fin de la guerra, Violet Evergarden, una ex-soldado con prótesis mecánicas, busca comprender el significado de las palabras \"te amo\" trabajando como una Auto Memories Doll escribiendo cartas que expresan los sentimientos de otros.",
-        icono = Icons.Default.MenuBook
+        imagenRes = com.example.evaluacionpractica.R.drawable.violet_evergarden
     ),
     LightNovel(
         id = 2,
@@ -34,7 +34,7 @@ val listaLightNovel = listOf(
         anioPublicacion = 2014,
         calificacion = 4.8,
         sinopsis = "Un hombre desempleado de 34 años muere atropellado por un camión y renace en un mundo de fantasía e historia medieval como Rudeus Greyrat, decidido a vivir su nueva vida al máximo sin arrepentimientos.",
-        icono = Icons.Default.AutoStories
+        imagenRes = com.example.evaluacionpractica.R.drawable.mushoku_tensei
     ),
     LightNovel(
         id = 3,
@@ -43,7 +43,7 @@ val listaLightNovel = listOf(
         anioPublicacion = 2014,
         calificacion = 4.8,
         sinopsis = "Sakuta Azusagawa presencia a su senpai, la famosa actriz Mai Sakurajima, caminando por la biblioteca vestida de conejita sin que nadie más la note, comenzando a investigar el misterioso \"Síndrome de la Pubertad\".",
-        icono = Icons.Default.Bookmark
+        imagenRes = com.example.evaluacionpractica.R.drawable.seishun_buta
     ),
     LightNovel(
         id = 4,
@@ -52,7 +52,7 @@ val listaLightNovel = listOf(
         anioPublicacion = 2003,
         calificacion = 4.7,
         sinopsis = "Kyon, un estudiante de secundaria normal, conoce a Haruhi Suzumiya, una chica obsesionada con encontrar extraterrestres, viajeros del tiempo y esperes, creando la Brigada SOS sin saber que ella posee el poder de alterar la realidad.",
-        icono = Icons.Default.Book
+        imagenRes = com.example.evaluacionpractica.R.drawable.suzumiya_haruhi
     ),
     LightNovel(
         id = 5,
@@ -61,7 +61,7 @@ val listaLightNovel = listOf(
         anioPublicacion = 2001,
         calificacion = 4.7,
         sinopsis = "Houtarou Oreki es un estudiante de secundaria con la filosofía de ahorrar energía mental. Sin embargo, al unirse al Club de Literatura Clásica conoce a Eru Chitanda y juntos comienzan a resolver curiosos misterios cotidianos.",
-        icono = Icons.Default.MenuBook
+        imagenRes = com.example.evaluacionpractica.R.drawable.hyouka
     ),
     LightNovel(
         id = 6,
@@ -70,6 +70,6 @@ val listaLightNovel = listOf(
         anioPublicacion = 2002,
         calificacion = 4.6,
         sinopsis = "Un periodista investigativo viaja a Europa para recabar testimonios y documentos sobre los oscuros crímenes de Johan Liebert y el experimento del Kinderheim 511, profundizando en los misterios de la historia.",
-        icono = Icons.Default.AutoStories
+        imagenRes = com.example.evaluacionpractica.R.drawable.another_monster
     )
 )

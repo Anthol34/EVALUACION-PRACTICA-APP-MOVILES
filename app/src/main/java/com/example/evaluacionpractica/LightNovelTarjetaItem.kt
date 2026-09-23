@@ -32,11 +32,13 @@ fun LightNovelItemCard(
             modifier = Modifier.padding(12.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Icon(
-                imageVector = lightNovel.icono,
+            androidx.compose.foundation.Image(
+                painter = androidx.compose.ui.res.painterResource(id = lightNovel.imagenRes),
                 contentDescription = lightNovel.titulo,
-                modifier = Modifier.size(56.dp),
-                tint = MaterialTheme.colorScheme.primary
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(140.dp),
+                contentScale = androidx.compose.ui.layout.ContentScale.Crop
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(

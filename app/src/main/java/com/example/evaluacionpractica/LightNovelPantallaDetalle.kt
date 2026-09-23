@@ -52,13 +52,13 @@ fun LightNovelDetailScreen(
                 colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
                 shape = MaterialTheme.shapes.medium
             ) {
-                Icon(
-                    imageVector = lightNovel.icono,
+                androidx.compose.foundation.Image(
+                    painter = androidx.compose.ui.res.painterResource(id = lightNovel.imagenRes),
                     contentDescription = lightNovel.titulo,
                     modifier = Modifier
-                        .size(120.dp)
-                        .padding(16.dp),
-                    tint = MaterialTheme.colorScheme.primary
+                        .fillMaxWidth(0.6f)
+                        .aspectRatio(0.7f),
+                    contentScale = androidx.compose.ui.layout.ContentScale.Crop
                 )
             }
             Spacer(modifier = Modifier.height(20.dp))
