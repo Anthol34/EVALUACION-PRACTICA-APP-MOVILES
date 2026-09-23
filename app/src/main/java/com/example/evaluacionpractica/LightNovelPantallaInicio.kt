@@ -52,7 +52,7 @@ fun LightNovelHomeScreen(
             )
             Spacer(modifier = Modifier.height(10.dp))
             Text(
-                text = "Explora y descubre detalles sobre nuestra colección de libros destacados en formato nativo con Jetpack Compose.",
+                text = "Explora y descubre detalles sobre nuestra colección de novelas ligeras japonesas destacadas",
                 style = MaterialTheme.typography.bodyLarge,
                 textAlign = TextAlign.Center,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
