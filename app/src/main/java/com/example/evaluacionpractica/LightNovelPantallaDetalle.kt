@@ -135,7 +135,7 @@ fun LightNovelDetailScreen(
 @Preview(showBackground = true)
 @Composable
 fun LightNovelDetailScreenPreview() {
-    MaterialTheme {
+    com.example.evaluacionpractica.ui.theme.EVALUACIONPRACTICATheme {
         LightNovelDetailScreen(
             lightNovel = listaLightNovel[0],
             onVolverAlCatalogo = {}

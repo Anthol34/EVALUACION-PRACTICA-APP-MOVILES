@@ -59,7 +59,7 @@ fun LightNovelCatalogScreen(
 @Preview(showBackground = true)
 @Composable
 fun LightNovelCatalogScreenPreview() {
-    MaterialTheme {
+    com.example.evaluacionpractica.ui.theme.EVALUACIONPRACTICATheme {
         LightNovelCatalogScreen(
             lightNovel = listaLightNovel,
             onLightNovelClick = {},

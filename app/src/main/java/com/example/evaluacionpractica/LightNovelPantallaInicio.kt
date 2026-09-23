@@ -73,7 +73,7 @@ fun LightNovelHomeScreen(
 @Preview(showBackground = true)
 @Composable
 fun LightNovelHomeScreenPreview() {
-    MaterialTheme {
+    com.example.evaluacionpractica.ui.theme.EVALUACIONPRACTICATheme {
         LightNovelHomeScreen(onVerCatalogo = {})
     }
 }

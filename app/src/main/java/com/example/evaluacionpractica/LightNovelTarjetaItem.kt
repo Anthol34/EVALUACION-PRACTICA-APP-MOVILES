@@ -74,7 +74,7 @@ fun LightNovelItemCard(
 @Preview(showBackground = true)
 @Composable
 fun LightNovelItemCardPreview() {
-    MaterialTheme {
+    com.example.evaluacionpractica.ui.theme.EVALUACIONPRACTICATheme {
         LightNovelItemCard(
             lightNovel = listaLightNovel[0],
             onClick = {}

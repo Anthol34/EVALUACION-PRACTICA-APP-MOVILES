@@ -12,32 +12,37 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = SakuraPrimaryDark,
+    onPrimary = SakuraOnPrimaryDark,
+    primaryContainer = SakuraPrimaryContainerDark,
+    onPrimaryContainer = SakuraOnPrimaryContainerDark,
+    secondary = IndigoSecondaryDark,
+    onSecondary = IndigoOnSecondaryDark,
+    secondaryContainer = IndigoSecondaryContainerDark,
+    onSecondaryContainer = IndigoOnSecondaryContainerDark,
+    background = BackgroundDark,
+    surface = SurfaceDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = SakuraPrimaryLight,
+    onPrimary = SakuraOnPrimaryLight,
+    primaryContainer = SakuraPrimaryContainerLight,
+    onPrimaryContainer = SakuraOnPrimaryContainerLight,
+    secondary = IndigoSecondaryLight,
+    onSecondary = IndigoOnSecondaryLight,
+    secondaryContainer = IndigoSecondaryContainerLight,
+    onSecondaryContainer = IndigoOnSecondaryContainerLight,
+    background = PaperBackgroundLight,
+    surface = SurfaceLight
 )
 
 @Composable
 fun EVALUACIONPRACTICATheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // IMPORTANTE: dynamicColor está en falso por defecto para que la paleta personalizada se muestre
+    // en lugar de los colores del sistema generados por Monet (Android 12+)
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
